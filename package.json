@@ -1,0 +1,43 @@
+{
+  "name": "my-project",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "deploy": "strapi deploy"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.25.7",
+    "@strapi/plugin-i18n": "4.25.7",
+    "@strapi/plugin-users-permissions": "4.25.7",
+    "@strapi/strapi": "4.25.7",
+    "axios": "^1.7.3",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "8.6.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^5.3.4",
+    "sequelize": "^6.37.3",
+    "socket.io": "^4.7.5",
+    "sqlite3": "^5.1.7",
+    "styled-components": "5.3.3",
+    "ws": "^8.18.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "7eece46d-356e-4ed9-95b1-616564221079"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
