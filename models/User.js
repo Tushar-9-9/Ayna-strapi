@@ -3,7 +3,7 @@ const axios = require('axios');
 // Fetch user details from Strapi
 const fetchUser = async (userId) => {
     try {
-        const response = await axios.get(`http://localhost:1337/users/${userId}`); // Adjust URL if necessary
+        const response = await axios.get(`https://blessed-desk-ccf349152c.strapiapp.com/users/${userId}`);
         return response.data;
     } catch (error) {
         console.error('Error fetching user:', error);

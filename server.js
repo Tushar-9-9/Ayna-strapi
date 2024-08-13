@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express'); // Only if you need Express for additional routing, otherwise omit this
 const { createServer } = require('http');
 const createWebSocketServer = require('./websocket'); // Adjust the path if necessary
@@ -12,6 +14,6 @@ const httpServer = createServer(app);
 createWebSocketServer(httpServer);
 
 // Listen on port 8080
-httpServer.listen(8080, () => {
-  console.log('WebSocket server running on ws://localhost:8080');
+httpServer.listen(process.env.WS_PORT || 8080, () => {
+  console.log(`WebSocket server running on ws://localhost:${process.env.WS_PORT || 8080}`);
 });
